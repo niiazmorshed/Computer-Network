@@ -1,8 +1,6 @@
 # CSE421 - Computer Networks
 
-Course materials, lab assignments, and project for CSE421 (Computer Networks).
-
-**Student:** Niaz Morshed | **ID:** 22101783
+Course materials, lab assignments, and project for CSE421 (Computer Networks)
 
 ---
 
