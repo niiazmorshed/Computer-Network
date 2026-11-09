@@ -1,45 +1,43 @@
-# CSE421 - Computer Networks
+# CSE421 — Computer Networks
 
-Course materials, lab assignments, and project for CSE421 (Computer Networks)
-
----
-
-## Repository Structure
-
-| Folder | Contents |
-|--------|----------|
-| `22101783_Niaz_Morshed_Lab1` | Basic router configuration (Cisco Packet Tracer) |
-| `22101783_Niaz_Morshed_Lab2` | Wireshark analysis — HTTP & SMTP traffic |
-| `22101783_Niaz_Morshed_Lab3` | Socket programming in Python (TCP client-server tasks) |
-| `22101783_Niaz_Morshed_04` | DHCP, Static Routing, Floating Static Routes, RIPv2 (Packet Tracer) |
-| `Project` | Smart Healthcare Network Design |
-| `Theoary` | Lecture slides and textbook |
+Coursework for CSE421 (Computer Networks): a network design project, hands-on labs and lecture material.
 
 ---
 
-## Lab 3 — Socket Programming
+## ⭐ Featured Project — [Smart Healthcare Network Design](Smart-Healthcare-Network/)
 
-Four Python TCP client-server tasks:
+A 6-site healthcare network built in Cisco Packet Tracer. It uses VLSM addressing, RIPv2 with static-route redistribution, next-hop/exit-interface/recursive/floating static routes, automatic failover, DHCP, and DNS/Web/Email services.
 
-- **Task 1:** Client sends its device hostname to the server
-- **Task 2–4:** Extended socket communication tasks
+**→ [View the project](Smart-Healthcare-Network/)**
 
-**Run a task:**
+---
+
+## Labs
+
+| Lab | Topic | Tools |
+|-----|-------|-------|
+| [Lab 1 — Basic Router Config](Labs/Lab1-Basic-Router-Config/) | Hostnames, passwords, banners, interface addressing | Packet Tracer, Cisco IOS |
+| [Lab 2 — Wireshark: HTTP & SMTP](Labs/Lab2-Wireshark-HTTP-SMTP/) | Packet capture and protocol analysis, UDP echo simulation | Wireshark, ns-3 (Python) |
+| [Lab 3 — Socket Programming](Labs/Lab3-Socket-Programming/) | TCP client/server apps, including a multi-threaded server | Python `socket`, `threading` |
+| [Lab 4 — DHCP, Static Routing & RIPv2](Labs/Lab4-DHCP-Static-Routing-RIPv2/) | DHCPv4 (IOS and server), static/default/floating routes, RIPv2 | Packet Tracer, Cisco IOS |
+
+### Running Lab 3
+
 ```bash
-python task1_server.py   # start server
-python task1_client.py   # connect client
+cd Labs/Lab3-Socket-Programming/Task1
+python task1_server.py   # terminal 1
+python task1_client.py   # terminal 2
 ```
 
+| Task | What it does |
+|------|--------------|
+| 1 | The client sends its hostname, and the server logs the client's IP and hostname |
+| 2 | The server counts the vowels in a message and replies |
+| 3 | The same as Task 2, with a multi-threaded server for clients connecting at the same time |
+| 4 | The server works out a salary from hours worked (with overtime) and checks the input |
+
 ---
 
-## Project — Smart Healthcare Network
+## Theory
 
-Design and simulation of a smart healthcare network using Cisco Packet Tracer, covering network topology, IP addressing, routing, and DHCP configuration.
-
----
-
-## Tools Used
-
-- Cisco Packet Tracer
-- Wireshark
-- Python 3 (socket module)
+[`Theory/`](Theory/): lecture slides (protocols, application/transport/network/data-link layers, IPv6) and assignments.
